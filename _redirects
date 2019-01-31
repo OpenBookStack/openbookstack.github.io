@@ -1,1 +1,5 @@
-http://jovial-bardeen-830b39.netlify.com/* http://openbookstack.github.io/:splat 301!
+# Redirect domain aliases to primary domain
+http://openbookstack.github.io/* http://openbookstack.github.io/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+http://openbookstack.netlify.com/* http://openbookstack.github.io/:splat 301!
