@@ -1,0 +1,11 @@
+source 'https://rubygems.org'
+
+gem 'jekyll'
+gem 'sass'
+gem 'octopress', '~> 3.0'
+gem 'jekyll-sitemap'
+gem 'json'
+gem 'jekyll-paginate'
+gem 'pygments.rb'
+gem 'jekyll-gist'
+gem 'github-pages'
