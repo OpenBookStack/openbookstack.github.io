@@ -1,0 +1,7 @@
+# Menu navigation links
+
+- title: All Posts
+  url: /posts/
+
+- title: All Tags
+  url: /tags/
