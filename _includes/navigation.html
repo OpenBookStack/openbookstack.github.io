@@ -1,5 +1,5 @@
 <style>
-/*nav {
+nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $cschatthai;
@@ -11,7 +11,6 @@
     display: block;
     font-size: 24px;
   }
-*/
   a {
     margin-left: 20px;
     color: $darkGray;
@@ -25,40 +24,12 @@
     }
   }
 }
-#topNav {
-  margin-bottom:0;
-}
 
-#nav2 {
-  width: 100%;
-}
-
-#nav2.affix-top {
-  position: static;
-}
-
-#nav2.affix {
-   position: fixed;
-   top: 0;
-   left: 0;
-   z-index: 2;
-   transition: all .6s ease-in-out;
-   -webkit-transition: all .6s ease-in-out;
-}
-
-.navbar-toggle {
-	outline:0;
-}
 
 </style>
 
 <script>
-/* affix the 2nd navbar after scroll past first navbar */
-$('#nav2').affix({
-      offset: {
-        top: 50
-      }
-});	
+	
 
 
 
@@ -154,25 +125,3 @@ $('#nav2').affix({
         </div>
       </div>
 
-<div class="navbar navbar-custom navbar-inverse navbar-static-top" id="nav2">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="#" class="">Home</a>
-                </li>
-                <li><a href="#section2" class="">Profile</a>
-                </li>
-                
-           
-            </ul>
-        </div>
-        <!--/.nav-collapse -->
-    </div>
-    <!--/.container -->
-</div>
