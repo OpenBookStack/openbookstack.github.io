@@ -103,46 +103,4 @@
 	</ul><!-- /.dl-menu -->
 </nav><!-- /.dl-menuwrapper -->
 
-<div class="wrapper-main" role="navigation">
-      <div class="wrapper-masthead">
-        <div class="container">
-          <header class="masthead clearfix">
-            <img src="{{ site.avatar }}" data-action="zoom" class="site-avatar" />
 
-           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-
-            <nav>
-              <a href="{{ site.baseurl }}/">Blog</a>
-              <a href="{{ site.baseurl }}/tags">Tags</a>
-              <a href="{{ site.baseurl }}/about">About</a>
-            </nav>
-          </header>
-        </div>
-      </div>
-<div>
-{% if site.data.samplelist.toc2[0] %}
-  {% for item in site.data.samplelist.toc2 %}
-    <h3>{{ item.title }}</h3>
-      {% if item.subfolderitems[0] %}
-        <ul>
-          {% for entry in item.subfolderitems %}
-              <li><a href="{{ entry.url }}">{{ entry.page }}</a>
-                {% if entry.subsubfolderitems[0] %}
-                  <ul>
-                  {% for subentry in entry.subsubfolderitems %}
-                      <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
-                  {% endfor %}
-                  </ul>
-                {% endif %}
-              </li>
-          {% endfor %}
-        </ul>
-      {% endif %}
-    {% endfor %}
-{% endif %}
-</div>
