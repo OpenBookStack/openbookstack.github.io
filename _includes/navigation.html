@@ -1,3 +1,33 @@
+<style>
+nav {
+  float: right;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $cschatthai;
+  font-size: 24px;
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 24px;
+  }
+
+  a {
+    margin-left: 20px;
+    color: $darkGray;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
+      color: $blue;
+    }
+  }
+}
+
+</style>
+
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
 	<ul class="dl-menu">
