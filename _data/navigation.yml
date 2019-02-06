@@ -1,7 +1,10 @@
 # Menu navigation links
 
-- title: All Posts
+- title: All Articles
   url: /posts/
 
-- title: All Tags
+- title: All Topics
   url: /tags/
+  
+- title: Contributors
+  url: /contributors/
