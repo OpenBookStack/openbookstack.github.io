@@ -25,8 +25,47 @@ nav {
     }
   }
 }
+#topNav {
+  margin-bottom:0;
+}
+
+#nav2 {
+  width: 100%;
+}
+
+#nav2.affix-top {
+  position: static;
+}
+
+#nav2.affix {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 2;
+   transition: all .6s ease-in-out;
+   -webkit-transition: all .6s ease-in-out;
+}
+
+.navbar-toggle {
+	outline:0;
+}
 
 </style>
+
+<script>
+/* affix the 2nd navbar after scroll past first navbar */
+$('#nav2').affix({
+      offset: {
+        top: 50
+      }
+});	
+
+
+
+
+
+
+</script>
 
 <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
 	<button class="dl-trigger">Open Menu</button>
